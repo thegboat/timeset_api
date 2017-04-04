@@ -18,3 +18,10 @@ POST localhost:3000/tokens
 }
 
 Authorization: Bearer {token}
+
+POST localhost:3000/users/1/posts
+
+{"post" :{
+"content" : "first post"
+}
+}

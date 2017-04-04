@@ -2,7 +2,7 @@ class ApplicationController < ActionController::API
 
   def authenticate
     unless User.where(id: user_id, access_token: access_token).exists?
-      render json: "The user could not be authenticated.", status: :forbidden
+      render json: ["The user could not be authenticated."], status: :forbidden
     end
   end
 
